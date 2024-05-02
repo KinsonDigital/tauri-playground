@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "powershell -ExecutionPolicy Bypass ./clean.ps1",
-    "reinstall-deps": "npm ci",
+    "reinstall-deps": "powershell -ExecutionPolicy Bypass ./reinstall-deps.ps1",
     "rebuild-prod": "npm reinstall-deps && pnpm build-prod-full"
   },
   "dependencies": {

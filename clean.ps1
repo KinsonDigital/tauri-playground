@@ -6,12 +6,12 @@ $cwd = Get-Location;
 # # Remove the '.next' folder
 # Write-Host "   Removing the '.next' folder..." -ForegroundColor DarkGray;
 
-# $nextDirPath = "$cwd/.next";
-# if (Test-Path -Path $nextDirPath) {
-#     Remove-Item -Path $nextDirPath -Force -Recurse - -Confirm:$false;
-# } else {
-#     Write-Host "   The '.next' folder does not exist." -ForegroundColor DarkGray;
-# }
+$nextDirPath = "$cwd/.next";
+if (Test-Path -Path $nextDirPath) {
+    Remove-Item -Path "$nextDirPath" -Force -Recurse -Confirm:$false;
+} else {
+    Write-Host "   The '.next' folder does not exist." -ForegroundColor DarkGray;
+}
 
 # Remove the 'node_modules' folder
 Write-Host "   Removing the 'node_modules' folder..." -ForegroundColor DarkGray;
@@ -23,14 +23,24 @@ if (Test-Path -Path $nodeModulesDirPath) {
     Write-Host "   The 'node_modules' folder does not exist." -ForegroundColor DarkGray;
 }
 
-# # Remove the 'out' folder
-# Write-Host "   Removing the 'out' folder..." -ForegroundColor DarkGray;
+# Remove the 'out' folder
+Write-Host "   Removing the 'out' folder..." -ForegroundColor DarkGray;
 
-# $outDirPath = "$cwd/out";
-# if (Test-Path -Path $outDirPath) {
-#     Remove-Item -Path $outDirPath -Force -Recurse -Confirm:$false;
-# } else {
-#     Write-Host "   The 'out' folder does not exist." -ForegroundColor DarkGray;
-# }
+$outDirPath = "$cwd/out";
+if (Test-Path -Path $outDirPath) {
+    Remove-Item -Path $outDirPath -Force -Recurse -Confirm:$false;
+} else {
+    Write-Host "   The 'out' folder does not exist." -ForegroundColor DarkGray;
+}
+
+# Remove the './src-tauri/target' folder
+Write-Host "   Removing the 'target' folder..." -ForegroundColor DarkGray;
+
+$targetDirPath = "$cwd/src-tauri/target";
+if (Test-Path -Path $targetDirPath) {
+    Remove-Item -Path $targetDirPath -Force -Recurse -Confirm:$false;
+} else {
+    Write-Host "   The 'target' folder does not exist." -ForegroundColor DarkGray;
+}
 
 Write-Host "Everything Clean!" -ForegroundColor DarkGreen;

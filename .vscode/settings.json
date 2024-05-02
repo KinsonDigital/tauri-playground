@@ -9,5 +9,6 @@
         "node_modules": true,
         "out": true,
         ".next": true,
+        "**/target": true
     }
 }
