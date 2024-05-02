@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 import { invoke } from "@tauri-apps/api/tauri";
 
 export default function Greet() {
-    const [greeting, setGreeting] = useState("");
+	const [greeting, setGreeting] = useState("");
 
-    useEffect(() => {
-        invoke<string>("greet", { name: "Kinson" })
-            .then((result) => setGreeting(result))
-            .catch(console.error);
-    }, []);
+	useEffect(() => {
+		invoke<string>("greet", { name: "Kinson" })
+			.then((result) => setGreeting(result))
+			.catch(console.error);
+	}, []);
 
-    return <div>{greeting}</div>
+	return <div>{greeting}</div>
 }
