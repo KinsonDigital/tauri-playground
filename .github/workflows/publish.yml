@@ -51,16 +51,8 @@ jobs:
         # webkitgtk 4.0 is for Tauri v1 - webkitgtk 4.1 is for Tauri v2.
         # You can remove the one that doesn't apply to your app to speed up the workflow a bit.
 
-      - name: Install PNPM (POSIX)
-        if: matrix.platform == 'ubuntu-22.04' || matrix.platform == 'macos-latest'
-        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
-
-      - name: Install PNPM (WINDOWS)
-        if: matrix.platform == 'windows-latest'
-        run: iwr https://get.pnpm.io/install.ps1 -useb | iex
-
       - name: Install Frontend Dependencies
-        run: pnpm install
+        run: yarn install
 
       # NOTE: The release must already exist!!
       - name: Publish To Release
