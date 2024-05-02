@@ -5,8 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-dev-full": "pnpm tauri dev",
+    "build-prod-full": "pnpm tauri build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "powershell -ExecutionPolicy Bypass ./clean.ps1",
+    "reinstall-deps": "npm ci",
+    "rebuild-prod": "npm reinstall-deps && pnpm build-prod-full"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.5.4",
