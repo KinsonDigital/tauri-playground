@@ -1,0 +1,23 @@
+{
+  "version": "0.4.0",
+  "notes": "D:\\a\\tauri-playground\\tauri-playground",
+  "pub_date": "2024-05-07T13:56:57.993Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRRnNROFViZXJvOWhXVC9iMGF1S1J1Y2I3TC9sejQwbFVoRlJ4ZFp3cXFqS2ZWTnNKS3ZqQkVnVDR4dmZodWw2U2RVMGhOQTdGRGJqTGJXRGF3ZnJZdEtVbzkxRHBhOEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1MDg5OTIxCWZpbGU6bXktdGF1cmkuYXBwLnRhci5negpsblJ5Rk5zbWZ0dysxSFlDYnJ6Vm1NMTFqSVRGZmFQRWpBc3pPRnllaUtJVFpOelA0RGpJVXhrczN6T2RWenVoUXRTNEphTEpHRENYVVdsMnNONjZDQT09Cg==",
+      "url": "https://github.com/KinsonDigital/tauri-playground/releases/download/v0.4.0/my-tauri_aarch64.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRRnNROFViZXJvOWk5blJRTWZlbVBvdmdNdTdWZzZWWnh2Nlg2Vk9sRTQzU2FoeHB4ZEdGb2JUQTNnYXRNTk84MlFIMURiM2IrdUVLRFNUQU5IL3BQcnNIWVVSZ3JNcFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1MDg5OTM1CWZpbGU6bXktdGF1cmkuYXBwLnRhci5negp0Sk9Gc3llS0s5VFNySXJQNDJtSURFQnhPck8vai9BZFg3L3JOc3FySnd1NHlnSHRFK1Y1MHZ0Y1RadmdWQk1lakQyeVlmS0NPUUNGRmJZa1FlMUlEZz09Cg==",
+      "url": "https://github.com/KinsonDigital/tauri-playground/releases/download/v0.4.0/my-tauri_x64.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRRnNROFViZXJvOW1RSHk1UHA5TjVTZldTeVppcVl6MEdYSWVsVFNqdGpYQWRYb2xNWlJZZVBMY1BYYllrK251LzBDN2VTRXRPVnFEY1JLK25qdCtiYkdsSngxcmdLL0F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1MDkwMDkzCWZpbGU6bXktdGF1cmlfMC40LjBfYW1kNjQuQXBwSW1hZ2UudGFyLmd6CkhxRFhNUWEraHFkTE1TRHBCWkJGVEV2UmpRckdiQ0pFNzlMY0crdFdRQTlMcW1iQ2tTTGJJaVNlaVVsV05qenRkOVJEZTMxVWtZTTN4Q3ZOY3JSN0RnPT0K",
+      "url": "https://github.com/KinsonDigital/tauri-playground/releases/download/v0.4.0/my-tauri_0.4.0_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRRnNROFViZXJvOWtoVHFXTDJBNUE4OHhyYUw2cXhsMGJSS0VKYllWZ0w3UTJuWjhsS1lGMlJaRDA5V1BOeFBUMUJGNHFUR3F6SUR5a3JweGpBQVdZNmZudmF1V3BlSVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1MDkwMjE0CWZpbGU6bXktdGF1cmlfMC40LjBfeDY0X2VuLVVTLm1zaS56aXAKbmNTa0dIQ3VYZzkva0dUV043Z20xcDhZZHVBL21ZWG1ad1RVSTJJMHlTcGlZbEtJQWFXOUlMRG0wMUR4MnNvL2M5bWlMUitDbGQ3QXlHckp0MVFORFE9PQo=",
+      "url": "https://github.com/KinsonDigital/tauri-playground/releases/download/v0.4.0/my-tauri_0.4.0_x64_en-US.msi.zip"
+    }
+  }
+}
