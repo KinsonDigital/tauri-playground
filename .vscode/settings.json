@@ -1,5 +1,9 @@
 {
-	"deno.enablePaths": ["scripts"],
+	"deno.enablePaths": [
+		"scripts",
+		".github/cicd",
+		"playground.ts"
+	],
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
