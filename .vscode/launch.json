@@ -31,6 +31,21 @@
 			},
 			// task for the `beforeBuildCommand` if used, must be configured in `.vscode/tasks.json`
 			"preLaunchTask": "ui:build"
+		},
+		{ // CLEAN
+			"request": "launch",
+			"name": "Clean",
+			"type": "node",
+			"program": "${workspaceFolder}/scripts/clean.ts",
+			"cwd": "${workspaceFolder}",
+			"runtimeExecutable": "C:\\Users\\kinso\\.deno\\bin\\deno.exe",
+			"runtimeArgs": [
+				"run",
+				"--allow-read",
+				"--allow-write",
+				"--inspect-wait",
+			],
+			"attachSimplePort": 9229
 		}
 	]
 }

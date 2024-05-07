@@ -1,4 +1,5 @@
 {
+	"deno.enablePaths": ["scripts"],
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
@@ -19,7 +20,7 @@
 	},
 	"[typescript]": {
 		"editor.insertSpaces": false,
-		"editor.tabSize": 2,
+		"editor.tabSize": 3,
 	},
 	"[typescriptreact]": {
 		"editor.insertSpaces": false,
@@ -38,4 +39,5 @@
 		"editor.tabSize": 2,
 		"editor.insertSpaces": true
 	},
+	"deno.enable": true,
 }
