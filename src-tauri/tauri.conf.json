@@ -53,7 +53,7 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://github.com/CalvinWilkinson/tauri-playground/releases/latest/download/latest.json"
+        "https://github.com/KinsonDigital/tauri-playground/releases/latest/download/latest.json"
       ],
       "dialog": true,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEY2RThFQTZEMTQwRkIxMDUKUldRRnNROFViZXJvOWkxVFZSSlU2Wmx2a1VNekYxZENPQmZFU0RRdkpFd0cvVFZiT1crRFcvTHAK"

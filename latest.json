@@ -16,7 +16,7 @@
       "url": "https://github.com/KinsonDigital/tauri-playground/releases/download/v0.4.0/my-tauri_0.4.0_amd64.AppImage.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRRnNROFViZXJvOWtoVHFXTDJBNUE4OHhyYUw2cXhsMGJSS0VKYllWZ0w3UTJuWjhsS1lGMlJaRDA5V1BOeFBUMUJGNHFUR3F6SUR5a3JweGpBQVdZNmZudmF1V3BlSVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1MDkwMjE0CWZpbGU6bXktdGF1cmlfMC40LjBfeDY0X2VuLVVTLm1zaS56aXAKbmNTa0dIQ3VYZzkva0dUV043Z20xcDhZZHVBL21ZWG1ad1RVSTJJMHlTcGlZbEtJQWFXOUlMRG0wMUR4MnNvL2M5bWlMUitDbGQ3QXlHckp0MVFORFE9PQo=",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRRnNROFViZXJvOXRKZXNqbXAyY283VzNLUzlYOW1xcStPWStJOGFWY2VQWmJNRnM5YnVROTZpVU8zQnZsYWdjYlZXZ1VEWUJKT292K0gxdFZzRW5YZnhxbVZTS3Z1Nmc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzE1MDkxNTM4CWZpbGU6bXktdGF1cmlfMC40LjBfeDY0X2VuLVVTLm1zaS56aXAKSEs3RHMwV25hSTl0MEN2ZDNDMkFrMEhQTkNLbjlvUzRGM213aEVINGpTb0NSZ2R0dHdvdmtYWVNmUmlkT2VHQTJWdCttcVB3ZmhLMmE1UmtEdnBZQnc9PQo=",
       "url": "https://github.com/KinsonDigital/tauri-playground/releases/download/v0.4.0/my-tauri_0.4.0_x64_en-US.msi.zip"
     }
   }
