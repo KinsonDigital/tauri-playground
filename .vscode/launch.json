@@ -24,10 +24,10 @@
 			},
 			"attachSimplePort": 9229
 		},		
-		{
-			"type": "lldb",
+		{ // TAURI DEV DEBUG
 			"request": "launch",
 			"name": "Tauri Development Debug",
+			"type": "lldb",
 			"cargo": {
 				"args": [
 					"build",
@@ -38,10 +38,10 @@
 			// task for the `beforeDevCommand` if used, must be configured in `.vscode/tasks.json`
 			"preLaunchTask": "ui:dev"
 		},
-		{
-			"type": "lldb",
+		{ // TAURI PROD DEBUG
 			"request": "launch",
 			"name": "Tauri Production Debug",
+			"type": "lldb",
 			"cargo": {
 				"args": [
 					"build",
@@ -65,6 +65,30 @@
 				"--allow-write",
 				"--inspect-wait",
 			],
+			"attachSimplePort": 9229
+		},
+		{ // UPDATE LATEST ASSET DATA
+			"request": "launch",
+			"name": "Update Asset Data",
+			"type": "node",
+			"program": "${workspaceFolder}/.github/cicd/update-latest-asset-data.ts",
+			"cwd": "${workspaceFolder}",
+			"runtimeExecutable": "C:\\Users\\kinso\\.deno\\bin\\deno.exe",
+			"runtimeArgs": [
+				"run",
+				// "--allow-read",
+				// "--allow-write",
+				"--allow-net",
+				"--allow-env",
+				"--inspect-wait",
+			],
+			"env": {
+				"OWNER_NAME": "KinsonDigital",
+				"REPO_NAME": "tauri-playground",
+				"CICD_TOKEN": "${env:CICD_TOKEN}",
+				"TAG": "v0.4.0",
+				"AUTH_GUID": "${env:AUTH_GUID}",
+			},
 			"attachSimplePort": 9229
 		}
 	]

@@ -104,12 +104,27 @@ export class ReleaseClient {
 		return textContent;
 	}
 
-	public async deleteAsset(assetId: number): Promise<void> {
-
-
+	public async deleteAsset(releaseId: number, assetId: number): Promise<void | Error> {
+		const baseUrl = "https://api.github.com";
+		const fullUrl = `${baseUrl}/repos/${this.ownerName}/${this.repoName}/releases/assets/${assetId}`;
+		
+		const response = await fetch(fullUrl, {
+			method: "DELETE",
+			headers: {
+				"Accept": "application/vnd.github+json",
+				"X-GitHub-Api-Version": "2022-11-28",
+				"Authorization": `Bearer ${this.token}`,
+			},
+		});
+		
+		if (response.status !== 204) {
+			const errorMsg = `Status Code: ${response.status} ${response.statusText}`;
+			return new Error(errorMsg);
+		}
 	}
 
 	public async uploadLatestDataAsset(tag: string, latestData: string): Promise<void | Error> {
+		const latestDataFileName = "latest.json";
 		const releaseId = await this.getReleaseId(tag);
 
 		if (releaseId instanceof Error) {
@@ -120,7 +135,7 @@ export class ReleaseClient {
 			return new Error(`The release with tag ${tag} was not found.`);
 		}
 
-		const asset = await this.getAsset(releaseId, "latest.json");
+		const asset = await this.getAsset(releaseId, latestDataFileName);
 
 		if (asset instanceof Error) {
 			return asset;
@@ -128,11 +143,11 @@ export class ReleaseClient {
 
 		// if the asset does not equal null
 		if (asset !== null) {
-			await this.deleteAsset(asset.id);
+			await this.deleteAsset(releaseId, asset.id);
 		}
 
 		const baseUrl = "https://uploads.github.com";
-		const queryParams = `?name=latestNEW.json`;
+		const queryParams = `?name=${latestDataFileName}`;
 		const fullUrl = `${baseUrl}/repos/${this.ownerName}/${this.repoName}/releases/${releaseId}/assets${queryParams}`;
 
 		const response = await fetch(fullUrl, {

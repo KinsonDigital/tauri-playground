@@ -5,7 +5,7 @@ const ownerName = Deno.env.get("OWNER_NAME") ?? "";
 const repoName = Deno.env.get("REPO_NAME") ?? "";
 const token = Deno.env.get("CICD_TOKEN") ?? "";
 const tag = Deno.env.get("TAG") ?? "";
-const authId = Deno.env.get("AUDIO_ID") ?? "";
+const authGuid = Deno.env.get("AUTH_GUID") ?? "";
 
 // TODO: Check if the env vars are incorrect and throw errors
 
@@ -48,10 +48,10 @@ const [winAsset, linuxAsset, appleAsset, appleSiliconAsset ] = assetIds as Asset
 
 const updateProxyBaseUrl = "https://update-proxy.deno.dev";
 
-assetData.platforms["windows-x86_64"].url = `${updateProxyBaseUrl}?assetId=${winAsset.id}&authId=${authId}`;
-assetData.platforms["linux-x86_64"].url = `${updateProxyBaseUrl}?assetId=${linuxAsset.id}&authId=${authId}`;
-assetData.platforms["darwin-x86_64"].url = `${updateProxyBaseUrl}?assetId=${appleAsset.id}&authId=${authId}`;
-assetData.platforms["darwin-aarch64"].url = `${updateProxyBaseUrl}?assetId=${appleSiliconAsset.id}&authId=${authId}`;
+assetData.platforms["windows-x86_64"].url = `${updateProxyBaseUrl}?assetId=${winAsset.id}&authId=${authGuid}`;
+assetData.platforms["linux-x86_64"].url = `${updateProxyBaseUrl}?assetId=${linuxAsset.id}&authId=${authGuid}`;
+assetData.platforms["darwin-x86_64"].url = `${updateProxyBaseUrl}?assetId=${appleAsset.id}&authId=${authGuid}`;
+assetData.platforms["darwin-aarch64"].url = `${updateProxyBaseUrl}?assetId=${appleSiliconAsset.id}&authId=${authGuid}`;
 
-// TODO: Delete original asset json file first, then reupload
+await client.uploadLatestDataAsset(tag, JSON.stringify(assetData, null, 2));
 
