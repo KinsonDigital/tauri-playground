@@ -37,6 +37,5 @@
 		"node_modules",
 		"src-tauri",
 		"scripts",
-		".github/cicd"
 	]
 }

@@ -4,6 +4,7 @@
 		".github/cicd",
 		"playground.ts"
 	],
+	"deno.config": "./github/cicd/deno.json",
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
