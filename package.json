@@ -1,6 +1,6 @@
 {
     "name": "tauri-playground",
-    "version": "0.1.0",
+    "version": "0.4.0",
     "private": true,
     "scripts": {
         "dev": "next dev",
@@ -9,13 +9,13 @@
         "build-prod-full": "pnpm tauri build",
         "start": "next start",
         "lint": "next lint",
-        "clean": "powershell -ExecutionPolicy Bypass ./clean.ps1",
-        "reinstall-deps": "powershell -ExecutionPolicy Bypass ./reinstall-deps.ps1",
-        "rebuild-prod": "npm reinstall-deps && pnpm build-prod-full"
+        "clean": "deno run --allow-read --allow-write ./scripts/clean.ts",
+        "reinstall-deps": "pnpm clean && pnpm install",
+        "rebuild-prod": "pnpm reinstall-deps && pnpm build-prod-full"
     },
     "dependencies": {
         "@tauri-apps/api": "^1.5.4",
-        "next": "14.2.3",
+        "next": "14.2.10",
         "react": "^18",
         "react-dom": "^18"
     },
